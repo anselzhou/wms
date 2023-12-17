@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/bilibili.png</file>
+    <file>icons/close.png</file>
+    <file>icons/github.png</file>
+    <file>icons/logout.png</file>
+    <file>icons/max.png</file>
+    <file>icons/minus.png</file>
+    <file>icons/normal.png</file>
+    <file>icons/register.png</file>
+    <file>icons/sign-in.png</file>
+    <file>icons/sign-out.png</file>
+    <file>icons/verticalline.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>images/bag.jpg</file>
+  </qresource>
+</RCC>
