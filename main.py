@@ -278,8 +278,8 @@ class MyMainWindow(QMainWindow):
                 cursor.executemany(insert_sql, list)
                 cursor.execute('delete from material_address where qty=0')
                 db.commit()
-            except Exception as e:
-                print(e)
+            except pymysql.Error as e:
+                print(f"Error: {e}")
             finally:
                 cursor.close()
                 db.close()
@@ -308,6 +308,7 @@ class MyMainWindow(QMainWindow):
                     all = cursor.fetchall()
                     for i in all:
                         list.append(i)
+                print(list)
                 cursor.executemany(insert_sql, list)
                 db.commit()
             except Exception as e:
